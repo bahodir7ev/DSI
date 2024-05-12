@@ -1,0 +1,7 @@
+.services {
+    padding: 74px 0;
+
+    &-row {
+        @include flex(center, space-between)
+    }
+}

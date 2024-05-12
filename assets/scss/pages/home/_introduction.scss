@@ -1,0 +1,87 @@
+.introduction {
+    padding: 65px 0;
+    background: #f6f6f6;
+
+    @include media(1000) {
+        padding: 35px 0;
+    }
+
+    &-row {
+        @include flex(center, space-between);
+
+        @include media(768) {
+            flex-direction: column;
+        }
+    }
+
+    &-content {
+        width: 47%;
+        font-family: $main-font;
+
+        @include media(768) {
+            width: 100%;
+        }
+    }
+
+    &-image {
+        width: 53%;
+        height: 450px;
+
+        @include media(768) {
+            width: 100%;
+            height: 300px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 134%;
+        color: $black-color;
+        margin-bottom: 24px;
+        @include trn();
+
+        @include media(1000) {
+            & {
+                font-size: 26px;
+            }
+        }
+
+        @include media(768) {
+            & {
+                text-align: center;
+                font-size: 34px;
+            }
+        }
+        &__red {
+            color: $red-color;
+        }
+    }
+
+    &-subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #30444e;
+
+        @include media(1000) {
+            & {
+                font-size: 14px;
+            }
+        }
+
+        @include media(768) {
+            font-size: 18px;
+            
+        }
+
+        &__red {
+            color: $red-color;    
+        }
+    }
+}
