@@ -4,4 +4,18 @@
     &-row {
         @include flex(center, space-between)
     }
+
+    
+    &-text {
+        font-family: $main-font;
+        font-size: 18px;
+        line-height: 150%;
+        font-weight: 400;
+        color: $subtitle-color;
+
+        &__red {
+            color: $red-color;
+            font-weight: 500;
+        }
+    }
 }
